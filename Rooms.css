@@ -1,0 +1,24 @@
+.u-section-1 .u-sheet-1 {
+  min-height: 1112px;
+}
+
+.u-section-1 .u-text-1 {
+  margin: 8px 0 0;
+}
+
+.u-section-1 .u-table-1 {
+  margin-top: -47px;
+  margin-bottom: 60px;
+}
+
+.u-section-1 .u-table-header-1 {
+  font-weight: 700;
+  background-image: none;
+}.u-section-2 .u-sheet-1 {
+  min-height: 465px;
+}@font-face {
+  font-family: 'Cloud-Light';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/Cloud-Light.otf);
+}
