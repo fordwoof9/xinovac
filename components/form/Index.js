@@ -20,13 +20,25 @@ const Container = styled.div`
 
 export default function Index(props) {
     const [form] = Form.useForm()
-
     const onFinish = (values) => {
         console.log(values)
+        const axios = require('axios')
+        axios.post('http://localhost:5000/api/booking/create-booking', {
+            "name": (name),
+            "email": (email),
+            "room": (room)
+        })
+        .then(function (response) {
+            console.log(response);
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
         {values ? Swal.fire('Good job!',
         'Reservation Successfully',
         'success') : <> </>}
     };
+
 
     return (
         <Container>
@@ -59,9 +71,14 @@ export default function Index(props) {
                         <Select.Option value="r02">Room 2</Select.Option>
                         <Select.Option value="r03">Room 3</Select.Option>
                         <Select.Option value="r04">Room 4</Select.Option>
-                        <Select.Option value="r04">Room 5</Select.Option>
-                        <Select.Option value="r04">Room 6</Select.Option>
-                        <Select.Option value="r04">Room 7</Select.Option>
+                        <Select.Option value="r05">Room 5</Select.Option>
+                        <Select.Option value="r06">Room 6</Select.Option>
+                        <Select.Option value="r07">Room 7</Select.Option>
+                        <Select.Option value="r08">Room 8</Select.Option>
+                        <Select.Option value="r09">Room 9</Select.Option>
+                        <Select.Option value="r10">Room 10</Select.Option>
+                        <Select.Option value="r11">Room 11</Select.Option>
+                        <Select.Option value="r12">Room 12</Select.Option>
                     </Select>
                 </Form.Item>
 
