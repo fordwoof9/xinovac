@@ -1,8 +1,13 @@
 import React from 'react';
 import 'antd/dist/antd.css';
+import Layout from '../components/form/layout';
+import '../styles/globals.scss'
 
-export default function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function MyApp ({ Component, pageProps }) {
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout> 
+  )
 }
-
-
+export default MyApp
