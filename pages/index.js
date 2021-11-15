@@ -1,24 +1,17 @@
 import Head from 'next/head'
 import FormReservation from '../components/form/Index'
-import styles from '../styles/Home.module.scss'
+import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className="container">
       <Head>
         <title>XinoVAC</title>
       </Head>
-
-      <main className={styles.main}>
-        <h1>BU Meeting Room Reservation</h1>
-        <FormReservation />
-      </main>
-
-      <footer className={styles.footer}>
-       <span className="footer-content">
-         Powered By Xinovac Group
-       </span>
-      </footer>
+      <h1 className="homepic">
+        <Image className="meeting" src="/meeting.png" width={700} height={465} loading="lazy"/>
+        <FormReservation />  
+      </h1>
     </div>
   )
 }
