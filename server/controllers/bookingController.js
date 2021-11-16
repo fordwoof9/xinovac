@@ -12,7 +12,7 @@ exports.bookingRoom = async (req, res) => {
             user_email : result[1],
             user_room : result[2],
         },
-        'message' : 'Booking suceessuflly'
+        'message' : 'Booking successfully'
     }) :res.status(400).send({
         'status' : '400',
         'data' : "",

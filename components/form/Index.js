@@ -23,10 +23,16 @@ export default function Index(props) {
     const onFinish = (values) => {
         console.log(values)
         const axios = require('axios')
-        axios.post('http://localhost:5000/api/booking/create-booking', {
-            "name": (name),
-            "email": (email),
-            "room": (room)
+        var formData = ({
+            user_name: values.stuname, 
+            user_email: values.email,
+            user_room: values.room
+        });
+        console.log(formData)
+        axios.post('http://localhost:5000/api/booking/create-booking', {JSON: formData}, {
+            headers: {
+                'content-type': 'application/json',
+            },
         })
         .then(function (response) {
             console.log(response);
@@ -57,7 +63,7 @@ export default function Index(props) {
                     />
                 </Form.Item>
 
-                <Form.Item name={['name']} className="form-item-name" rules={[{ required: true}]}>
+                <Form.Item name={['stuname']} className="form-item-name" rules={[{ required: true}]}>
                     <Input placeholder="ชื่อนักศึกษา"></Input>
                 </Form.Item>
 
