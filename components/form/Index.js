@@ -21,28 +21,31 @@ const Container = styled.div`
 export default function Index(props) {
     const [form] = Form.useForm()
     const onFinish = (values) => {
-        console.log(values)
         const axios = require('axios')
-        var formData = ({
-            user_name: values.stuname, 
-            user_email: values.email,
-            user_room: values.room
-        });
-        console.log(formData)
-        axios.post('http://localhost:5000/api/booking/create-booking', {JSON: formData}, {
-            headers: {
-                'content-type': 'application/json',
+        axios({
+            method: "post",
+            url: "http://localhost:5000/api/booking/create-booking",
+            data: {
+                user_name: values.stuname, 
+                user_email: values.email,
+                user_room: values.room
             },
         })
         .then(function (response) {
-            console.log(response);
+            //handle success
+            Swal.fire(
+                'Booking Success!',
+                'Your booking is successfully!',
+                'success'
+              )
         })
-        .catch(function (error) {
-            console.log(error);
+        .catch(function (response) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Your booking went wrong!'
+              })
         });
-        {values ? Swal.fire('Good job!',
-        'Reservation Successfully',
-        'success') : <> </>}
     };
 
 
