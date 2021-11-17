@@ -7,7 +7,7 @@ const helmet = require('helmet')
 const app = express()
 
 app.use(express.static(path.join(__dirname, 'public')))
-app.use(cors({credentials: true, origin: ['http://localhost:3000', '*']}))
+app.use(cors({credentials: true, origin: ['https://salmon-water-0a9106500.azurestaticapps.net', '*']}))
 
 app.use(express.json()) 
 app.use(express.urlencoded({ extended: false }))
