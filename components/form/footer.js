@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const Footer = () => {
     return ( 
-        <footer>
+        <Footer>
             <div>
                 <h1 className="about">
                     About Us
@@ -22,7 +22,7 @@ const Footer = () => {
                     <p>Puttarak Morrat</p>
                 </h4>
             </div>
-        </footer>
+        </Footer>
     );
 }
 export default Footer;

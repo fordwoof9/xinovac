@@ -1,6 +1,6 @@
 const Header = () => {
     return ( 
-    <header>
+    <Header>
         <div>
             <h1 className="logo">
                 XinoVAC
@@ -10,7 +10,7 @@ const Header = () => {
                 ระบบการจองห้องประชุมออนไลน์
             </h2>
         </div>
-    </header>
+    </Header>
     );
 }
 export default Header;
