@@ -24,7 +24,7 @@ export default function Index(props) {
         const axios = require('axios')
         axios({
             method: "post",
-            url: "http://localhost:5000/api/booking/create-booking",
+            url: "https://xinovacserver.herokuapp.com/api/booking/create-booking",
             data: {
                 user_name: values.stuname, 
                 user_email: values.email,
