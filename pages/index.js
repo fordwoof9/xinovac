@@ -9,7 +9,7 @@ export default function Home() {
         <title>XinoVAC</title>
       </Head>
       <h1 className="homepic">
-        <Image className="meeting" src="/meeting.png" width={700} height={465} loading="lazy"/>
+        <Image alt="meeting" src="/meeting.png" width={700} height={465} loading="lazy"/>
         <FormReservation />  
       </h1>
     </div>
