@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const Footer = () => {
     return ( 
-        <footer>
+        <Footer>
             <div>
                 <h1 className="about">
                     About Us
@@ -12,9 +12,9 @@ const Footer = () => {
                     with an aim for Bangkok University students to reserve a meeting room in campus.
                 </h2>
                 <h3 className="member">
-                    <Image src="/mem1.png" width={200} height={200}/>
-                    <Image src="/mem2.png" width={160} height={200}/>
-                    <Image src="/mem3.png" width={250} height={177}/>
+                    <Image src="/mem1.png" alt="" width={200} height={200}/>
+                    <Image src="/mem2.png" alt="" width={160} height={200}/>
+                    <Image src="/mem3.png" alt="" width={250} height={177}/>
                 </h3>
                 <h4 className="membername">
                     <p>Rachen Chaisri</p>
@@ -22,7 +22,7 @@ const Footer = () => {
                     <p>Puttarak Morrat</p>
                 </h4>
             </div>
-        </footer>
+        </Footer>
     );
 }
 export default Footer;
