@@ -1,3 +1,5 @@
+const { Footer } = require("antd/lib/layout/layout");
+
 module.exports = {
   reactStrictMode: true,
   swcMinify: false,
@@ -5,7 +7,7 @@ module.exports = {
     if (!isServer) {
         // don't resolve 'fs' module on the client to prevent this error on build --> Error: Can't resolve 'fs'
         config.resolve.fallback = {
-            fs: false
+            ./Footer: false
         }
     }
 
