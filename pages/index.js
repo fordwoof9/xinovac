@@ -1,8 +1,7 @@
 import Head from 'next/head'
 import FormReservation from '../components/form/Index'
 import Image from 'next/image'
-
-const meeting = require('../public/meeting.png')
+import meeting from '../public/meeting.png'
 
 export default function Home() {
   return (
