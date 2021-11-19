@@ -75,7 +75,7 @@ footer .aboutinfo {
 }
 
 footer .member {
-  background-image: url('../assets/member.jpg');
+  background-image: url('../public/member.jpg');
   margin : 0px;
   display:flex;
   justify-content: space-around; 
@@ -84,7 +84,7 @@ footer .member {
 
 footer .membername {
   font-weight:bolder;
-  background-image: url('../assets/member.jpg');
+  background-image: url('../public/member.jpg');
   font-size: 30px;
   color:black;
   align-items:stretch;
