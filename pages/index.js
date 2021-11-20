@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import FormReservation from '../components/form/Index'
 import Image from 'next/image'
+import meeting from '../assets/meeting.png'
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
         <title>XinoVAC</title>
       </Head>
       <h1 className="homepic">
-        <Image alt="meeting" src="/meeting.png" width={700} height={465} loading="lazy"/>
+        <Image className="meeting" src={meeting} alt=""width={700} height={465} loading="lazy"/>
         <FormReservation />  
       </h1>
     </div>

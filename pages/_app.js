@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import 'antd/dist/antd.css';
 import Layout from '../components/form/layout';
 import '../styles/globals.scss'

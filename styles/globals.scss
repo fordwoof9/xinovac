@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100&display=swap');
 body {
-  background-color :#f76930;
+  background-color :#f76930 !important;
   display:inline-flex;
 }
 
@@ -75,7 +75,7 @@ footer .aboutinfo {
 }
 
 footer .member {
-  background-image: url('../public/member.jpg');
+  background-image: url('/member.jpg');
   margin : 0px;
   display:flex;
   justify-content: space-around; 
@@ -84,7 +84,7 @@ footer .member {
 
 footer .membername {
   font-weight:bolder;
-  background-image: url('../public/member.jpg');
+  background-image: url('/member.jpg');
   font-size: 30px;
   color:black;
   align-items:stretch;
