@@ -10,7 +10,7 @@ import Swal from "sweetalert2";
 
 const Container = styled.div`
     display: flex;
-    padding-top: 5rem;
+    padding-top: 2rem;
     padding-left: 10rem;
     justify-content: center;
     .ant-form-item-control-input-content{
