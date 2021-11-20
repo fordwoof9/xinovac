@@ -8,7 +8,7 @@ const Footer = () => {
                     About Us
                 </h1>
                 <h2 className="aboutinfo">
-                    This website is part of CS436 project created by XinoVac Group 
+                    This website is a part of CS436 project created by XinoVac Group 
                     with an aim for Bangkok University students to reserve a meeting room in campus.
                 </h2>
                 <h3 className="member">
