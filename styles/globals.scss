@@ -18,7 +18,7 @@ body {
   color:black;
   margin-top: auto;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: -700px;
   margin-bottom: auto;
   display:flex;
   justify-content: space-between; 
@@ -28,7 +28,7 @@ header {
   font-family: "Prompt";
   background-color: #15212a;
   margin: 0px auto 0px;
-  margin-right: -919px;
+  margin-right: -910px;
   padding: 10px 0;
   grid-column: auto / span 2;
 }
@@ -61,9 +61,9 @@ footer {
   display: grid;
   text-align: left;
   padding: 0px 0;
-  margin-right: -919px;
-  position: fixed;
-  bottom: 0;
+  margin-right: -912px;
+  position: relative;;
+  bottom: -50;
 }
 
 footer .about {
